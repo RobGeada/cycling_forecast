@@ -5,7 +5,7 @@ import requests
 
 from cycling_forecast.constants import *
 
-plt.style.use('https://raw.githubusercontent.com/RobGeada/stylelibs/main/material.mplstyle')
+plt.style.use('https://raw.githubusercontent.com/RobGeada/stylelibs/main/material_white.mplstyle')
 
 # === WEATHER API PARSING ==========================================================================
 # grab weather at specified coordinates

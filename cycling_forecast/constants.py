@@ -1,9 +1,9 @@
 # specify your forecast constants in here
 
 # === WEATHER ======================================================================================
-MAXIMUM_EXPECTED_RAIN = 10
-MAXIMUM_WINDSPEED = 30
-OPTIMAL_TEMPERATURE = 20
+MAXIMUM_EXPECTED_RAIN = 10 # what rainfall (mm) should mean 0% suitable?
+MAXIMUM_WINDSPEED = 30     # what windspeed (mph) means 0% suitable?
+OPTIMAL_TEMPERATURE = 20   # what is the ideal cycling temperature (C)?
 
 # 0 skew is symmetric around opt temp
 # positive skew makes warmer-than-optimal temps more suitable than proportionally colder temps

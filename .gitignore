@@ -4,3 +4,4 @@ client_secret*
 .ipynb_checkpoints
 .idea
 env
+**/.pyc

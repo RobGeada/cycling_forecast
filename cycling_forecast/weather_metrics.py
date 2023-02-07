@@ -64,14 +64,14 @@ def plot_metrics():
     plt.subplot(3,1, 1)
     xs = np.linspace(0, MAXIMUM_EXPECTED_RAIN, 10)
     plt.plot(xs, precip_score(1, xs), color="b", label="Suitability")
-    plt.xlabel("Expected Rain: (Probability * Volume)")
+    plt.xlabel("Rain Probability * Rain Volume (mm)")
     plt.axvline(MAXIMUM_EXPECTED_RAIN, color="r", label="Maximum Expected Rain")
     plt.ylabel("Suitability")
     plt.legend()
 
     plt.subplot(3,1, 2)
     xs = np.linspace(0, MAXIMUM_WINDSPEED, 10)
-    plt.plot(xs, wind_score(xs), label="Suitability")
+    plt.plot(xs, wind_score(xs), color="b", label="Suitability")
     plt.xlabel("Wind Speed (mph)")
     plt.axvline(MAXIMUM_WINDSPEED, color="r", label="Maximum Windspeed")
     plt.ylabel("Suitability")
@@ -79,13 +79,14 @@ def plot_metrics():
 
     plt.subplot(3,1, 3)
     xs = np.linspace(-10, 45, 1000)
-    plt.plot(xs, temp_score(xs), label="Suitability")
+    plt.plot(xs, temp_score(xs), color="b", label="Suitability")
     plt.xlabel("Temperature (C)")
     plt.axvline(OPTIMAL_TEMPERATURE, color="r", label="Optimal Temperature")
     plt.ylabel("Suitability")
     plt.legend()
 
     plt.tight_layout()
+    plt.savefig("plots/weather_metrics.png")
     plt.show()
 
 

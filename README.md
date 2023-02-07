@@ -27,3 +27,9 @@ immediately:
 * `-e, --email`: Specify the email address to send predictions to
 * `--plot_metrics`: Plot the suitability metrics across a variety of weather conditions
 * `--now`: Run and send the forecast immediately, then quit.
+
+# Default Weather Scoring
+Metric scores are computed for rainfall, windspeed, and temperature; these individual
+scores are then multiplied together. The plots below show the individual metric components 
+for a variety of plausible weather conditions, and the red lines indicate user-configurable parameters.
+![img](plots/weather_metrics.png)

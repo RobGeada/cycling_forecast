@@ -1,0 +1,6 @@
+*.pkl
+client_secret*
+*.last_sent
+.ipynb_checkpoints
+.idea
+env

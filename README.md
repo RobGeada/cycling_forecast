@@ -5,7 +5,7 @@
 * Grab your OAuth 2.0 Client IDs `client_secret_XXX.json` for your Google account from https://console.cloud.google.com/apis/credentials (you will need to create a new project) , and place
 it into the main directory. This is the account that the forecaster will send emails _from_ and _to_. 
 * Sign up for the https://openweathermap.org/ API, and note your API key. 
-* *Make sure to set a request limit at OpenWeatherMap below 2000 daily requests, so you are not charged!*
+* *Make sure to set a request limit at OpenWeatherMap below 2000 daily requests, so you are not charged!*. The Cycling Forecaster needs no more than 1 request a day.
 
 # Tinkering
 The `cycling_forecast/constants.py` contains some configuration options to customize your forecasting,
